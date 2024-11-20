@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+  <html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Questions - SN Game</title>
+    <link rel="icon" type="images/png" href="../../images/logo-sn-game.png"> 
+    <link href="../../css/bootstrap.min.css" href="../../css/materialize.min.css" href="../../css/button.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        .card {
+          height: 100%;
+        }
+  
+        .card-img-top {
+          height: 70%;
+          object-fit: contain;
+        }
+  
+        .purple-radio[type="radio"]:checked + span:after,
+        .purple-radio[type="radio"].with-gap:checked + span:before {
+          background-color: #4a148c;
+          border-color: black;
+        }
+        
+        .modal {
+            width: 50%;
+            height: 35%;
+            top: 25%;
+        }
+
+      </style>
+  </head>
+  <body style="background-color: #4a148c">
+        <nav class="nav-extended sticky-top">
+        <a href="#" class="brand-logo center">
+
+        </a>
+
+      <div class="nav-content black">
+              <ul class="tabs tabs-transparent">
+                  <img src="../../images/logo-sn-game.png" style="width: 50px;height: 50px;" alt="logo" class="d-flex right" >
+                  <li class="tab"><a href="../../index.html">Accueil</a></li>
+                  <li class="tab"><a class="active"  href="../../jeux.html">Jeux</a></li>
+                  <li class="tab"><a href="#">Défis</a></li>
+                  <li class="tab"><a href="#">Images</a></li>
+              </ul>
+      </div>
+  </nav>
+
+    <main class="container-fluid" >
+      <section class="row justify-content-center m-5 d-flex">
+          <div class="col-12 col-md-6 col-lg-3 mb-3">
+              <div class="card">
+                  <img src="../../images/houblon.png" alt="binouze" class="card-img-top img-fluid">
+                   <div class="card-body  d-flex flex-column">
+                      <h1 class="h3 card-title text-center">Question 6/10</h1>
+                      <div class="card-content">
+                        <p class="text-center">" En Europe et en France, le niveau de protection du houblon est classé comme : "</p>
+                        </div>
+                        <div class="card-action">
+          
+
+                            <legend class="text-center">Choisie la bonne réponse : </legend>
+                          <div class="container-fluid row justify-content-center">
+                            <p>
+                                <div class="row">
+                                    <label>
+                                        <input type="radio" name="modal" value="modal1" class="purple-radio" />
+                                        <span>Non préoccupante</span>
+                                    </label>
+                                </div>
+                                <div class="row">
+                                    <label>
+                                        <input type="radio" name="modal" value="modal2" class="purple-radio" />
+                                        <span>Préoccupation mineur</span>
+                                    </label>
+                                </div>
+                                <div class="row">
+                                    <label>
+                                        <input type="radio" name="modal" value="modal3" class="purple-radio" />
+                                        <span>Quasi menacé</span>
+                                    </label>
+                                </div>
+
+                          </div>
+                              
+                                <!-- Bouton de validation -->
+                                <div class="row center-align">
+                                    <button id="openModalBtn" class="btn purple darken-4">Valider</button>
+                                </div>
+                            </div>
+                                                            
+                      </div>
+                   </div>
+              </div>
+          </div>
+      </section>
+    </main> 
+                    <!-- Modals -->
+                    <div id="modal1" class="modal">
+                      <div class="modal-header">
+                        <h5 class="modal-title">VRAI</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>Ton adversaire bois une bière.</p>
+                    </div>    
+                    <div class="modal-footer">
+                        <a type="button" class="btn btn purple darken-4" href="Question-7.html">Suivant</a>
+                      </div>
+                    </div>
+
+                    <div id="modal2" class="modal">
+                          <div class="modal-header">
+                            <h5 class="modal-title">FAUX</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Bois une bière.</p>
+                        </div>    
+                        <div class="modal-footer">
+                            <a type="button" class="btn btn purple darken-4" href="Question-6.html">Retour</a>
+                          </div>
+                    </div>
+
+                    <div id="modal3" class="modal">
+                            <div class="modal-header">
+                                <h5 class="modal-title">FAUX</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>Bois une bière.</p>
+                            </div>    
+                            <div class="modal-footer">
+                                <a type="button" class="btn btn purple darken-4" href="Question-6.html">Retour</a>
+                              </div>
+                    </div>
+
+          <script src="../js/question-1_js.js" src="../../js/bootstrap.min.js" src="../../js/materialize.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+
+  </body>
+</html>
